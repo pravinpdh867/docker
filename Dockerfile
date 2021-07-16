@@ -1,7 +1,7 @@
-FROM  ubuntu:18.04
+FROM  centos:latest
 MAINTAINER  pravinpdh867@gmail.com
-RUN apt-get update -y
-RUN apt-get install -y httpd  \
+RUN yum update -y
+RUN yum install -y httpd  \
     zip \
     unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page268/garelick.zip /var/www/html
